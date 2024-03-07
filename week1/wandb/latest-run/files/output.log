@@ -1,0 +1,35 @@
+
+Epoch=0/149,currnet lr=0.25
+
+
+
+
+
+
+[Training] loss: 21.9743, accuracy: 1.1616:  20%|▏| 19/97 [00:14<01:00,  1.30it/
+Traceback (most recent call last):
+  File "/home/sinssinej7/private/my_first_pycharm/asgmt_1/train.py", line 179, in <module>
+    avg_cost, accuracy1 = train(train_loader, model, loss_fn, optimizer, device)
+  File "/home/sinssinej7/private/my_first_pycharm/asgmt_1/train.py", line 76, in train
+    for idx, (img,label) in enumerate(progress_bar):
+  File "/opt/conda/lib/python3.8/site-packages/tqdm/std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/sinssinej7/private/my_first_pycharm/asgmt_1/dataset.py", line 39, in __getitem__
+    img = self.transform(img)
+  File "/opt/conda/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torchvision/transforms/autoaugment.py", line 273, in forward
+    op_meta = self._augmentation_space(10, F.get_image_size(img))
+  File "/opt/conda/lib/python3.8/site-packages/torchvision/transforms/autoaugment.py", line 236, in _augmentation_space
+    "Solarize": (torch.linspace(255.0, 0.0, num_bins), False),
+KeyboardInterrupt

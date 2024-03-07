@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-197-generic-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2024-03-06T10:34:23.377905",
+    "startedAt": "2024-03-06T10:34:21.995633",
+    "docker": null,
+    "gpu": "NVIDIA RTX A5000",
+    "gpu_count": 10,
+    "cpu_count": 104,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/sinssinej7/private/my_first_pycharm/asgmt_1/train.py",
+    "codePath": "train.py",
+    "host": "sinssinej7",
+    "username": "sinssinej7",
+    "executable": "/opt/conda/bin/python3"
+}
